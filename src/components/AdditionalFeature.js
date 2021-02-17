@@ -5,8 +5,8 @@ import { addFeature } from "../actions/featureActions";
 const AdditionalFeature = props => {
 
 const handleNewFeature=(f)=>{
-  console.log(f);
-  console.log(f.price);
+  console.log("FEATURE BEING ADDED", f);
+  console.log("PRICE OF FEATURE BEING ADDED", f.price);
   props.addFeature(f);
 }
 
