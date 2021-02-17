@@ -6,6 +6,7 @@ const AdditionalFeature = props => {
 
 const handleNewFeature=(f)=>{
   console.log(f);
+  console.log(f.price);
   props.addFeature(f);
 }
 
@@ -22,10 +23,12 @@ const handleNewFeature=(f)=>{
 
 const mapStateToProps=(state)=>{
   return ({
+      additionalPrice: state.additionalPrice,
       features: 
         state.car.features
   })
 }
+
 
 
 export default connect(mapStateToProps, { addFeature })(AdditionalFeature);

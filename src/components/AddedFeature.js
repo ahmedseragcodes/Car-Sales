@@ -14,9 +14,11 @@ const AddedFeature = props => {
 
 const mapStateToProps=(state)=>{
   return ({
+      additionalPrice: state.additionalPrice,
       features: 
         state.car.features
   })
 }
+
 
 export default connect(mapStateToProps)(AddedFeature);
